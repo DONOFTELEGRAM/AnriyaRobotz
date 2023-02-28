@@ -72,12 +72,12 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text=f"🚁 ʜᴇʟᴘ 🚁", callback_data="help_back"),
-        InlineKeyboardButton(text=f"🥀 sᴛᴀᴛs 🥀", callback_data="stats_callback"),
+        InlineKeyboardButton(text=f"ʜᴇʟᴘ", callback_data="help_back"),
+        InlineKeyboardButton(text=f"sᴛᴀᴛs", callback_data="stats_callback"),
     ],
     [
-        InlineKeyboardButton(text="🏡 ᴀʙᴏᴜᴛ 🏡", callback_data="ABG_"),
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="ABG_"),
+        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"tg://user?id={OWNER_ID}"),
     ],
 ]
 
@@ -142,7 +142,7 @@ def send_help(chat_id, text, keyboard=None):
 
     if not keyboard:
         kb = paginate_modules(0, HELPABLE, "help")
-        # kb.append([InlineKeyboardButton(text='sᴜᴘᴘᴏʀᴛ', url='https://t.me/AbishnoiMF'),
+        # kb.append([InlineKeyboardButton(text='sᴜᴘᴘᴏʀᴛ', url='https://t.me/D0N_OF_Telegram'),
         #           InlineKeyboardButton(text='ʙᴀᴄᴋ', callback_data='start_back'),
         #           InlineKeyboardButton(text="ᴛʀʏ ɪɴʟɪɴᴇ", switch_inline_query_current_chat="")])
         keyboard = InlineKeyboardMarkup(kb)
